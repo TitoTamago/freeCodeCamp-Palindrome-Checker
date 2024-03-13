@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  transition: all 0.25s;
+  padding: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --light-black: #3d3b40;
+  --light-blue: #525ceb;
+  --gray-blue: #bfcfe7;
+  --blueish-white: #f8edff;
+  --light-green: #90ee90;
+  --light-red: #ff7f7f;
+}
+
+body {
+  background-color: var(--light-black);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-section {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.title-section h1 {
+  color: var(--blueish-white);
+}
+
+.checker-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--gray-blue);
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#text-input {
+  margin: 5px 0;
+  border: none;
+  background-color: transparent;
+  width: 225px;
+  text-align: center;
+  color: #3d3b40;
+  font-size: 1.25rem;
+  border-bottom: 2px solid var(--light-black);
+}
+
+#check-btn {
+  background-color: var(--light-black);
+  color: #bfcfe7;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+#result {
+  background-color: var(--blueish-white);
+  color: #3d3b40;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.palindrome-desc {
+  background-color: var(--light-blue);
+  color: var(--light-black);
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  opacity: 0.75;
+  font-size: 0.8rem;
+}
+
+.palindrome-desc h3 {
+  font-size: 1rem;
+  color: var(--blueish-white);
+}
+
+.palindrome-desc p {
+  font-size: 0.8rem;
+  color: var(--blueish-white);
+  text-align: justify;
+}
+
+.focus-text {
+  font-style: italic;
+  font-weight: 900;
+  color: var(--light-black);
+}
+
+/* Media Query */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .title-section {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .title-section h1 {
+    color: var(--blueish-white);
+  }
+
+  .checker-section {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  #text-input {
+    margin: 7.5px 0;
+    width: 300px;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--light-black);
+  }
+
+  #check-btn {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.15rem;
+  }
+
+  #result {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .palindrome-desc {
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+    opacity: 0.75;
+  }
+
+  .palindrome-desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .palindrome-desc p {
+    font-size: 1rem;
+    color: var(--blueish-white);
+    text-align: justify;
+  }
+
+  .focus-text {
+    font-style: italic;
+    font-weight: 900;
+    color: var(--light-black);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .title-section {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .title-section h1 {
+    color: var(--blueish-white);
+  }
+
+  .checker-section {
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  #text-input {
+    margin: 7.5px 0;
+    width: 400px;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--light-black);
+  }
+
+  #check-btn {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.15rem;
+  }
+
+  #result {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .palindrome-desc {
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+    opacity: 0.75;
+  }
+
+  .palindrome-desc h3 {
+    font-size: 1.75rem;
+  }
+
+  .palindrome-desc p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .checker-section {
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
